@@ -56,4 +56,9 @@ class Login extends Api {
     }
 
 
+    public function loggedUser_get(){
+        $this->response([$this->hasAuth,$this->token,$this->auth,$this->user],200);
+    }
+
+
 }

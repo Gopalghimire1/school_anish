@@ -365,3 +365,100 @@ INFO - 2021-09-10 06:17:30 --> Model "Authentication_model" initialized
 INFO - 2021-09-10 06:17:30 --> Model "Student_model" initialized
 INFO - 2021-09-10 06:17:30 --> Final output sent to browser
 DEBUG - 2021-09-10 06:17:30 --> Total execution time: 0.1400
+INFO - 2021-09-10 07:13:19 --> Config Class Initialized
+INFO - 2021-09-10 07:13:19 --> Hooks Class Initialized
+DEBUG - 2021-09-10 07:13:20 --> UTF-8 Support Enabled
+INFO - 2021-09-10 07:13:20 --> Utf8 Class Initialized
+INFO - 2021-09-10 07:13:23 --> URI Class Initialized
+DEBUG - 2021-09-10 07:13:23 --> No URI present. Default controller set.
+INFO - 2021-09-10 07:13:23 --> Router Class Initialized
+INFO - 2021-09-10 07:13:23 --> Output Class Initialized
+INFO - 2021-09-10 07:13:24 --> Security Class Initialized
+DEBUG - 2021-09-10 07:13:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-09-10 07:13:25 --> CSRF cookie sent
+INFO - 2021-09-10 07:13:25 --> Input Class Initialized
+INFO - 2021-09-10 07:13:25 --> Language Class Initialized
+INFO - 2021-09-10 07:13:26 --> Loader Class Initialized
+INFO - 2021-09-10 07:13:26 --> Helper loaded: url_helper
+INFO - 2021-09-10 07:13:26 --> Helper loaded: file_helper
+INFO - 2021-09-10 07:13:26 --> Helper loaded: form_helper
+INFO - 2021-09-10 07:13:26 --> Helper loaded: security_helper
+INFO - 2021-09-10 07:13:26 --> Helper loaded: directory_helper
+INFO - 2021-09-10 07:13:26 --> Helper loaded: general_helper
+INFO - 2021-09-10 07:13:27 --> Database Driver Class Initialized
+INFO - 2021-09-10 07:13:39 --> Session: Class initialized using 'database' driver.
+INFO - 2021-09-10 07:13:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-09-10 07:13:39 --> Pagination Class Initialized
+INFO - 2021-09-10 07:13:39 --> XML-RPC Class Initialized
+INFO - 2021-09-10 07:13:39 --> Form Validation Class Initialized
+INFO - 2021-09-10 07:13:39 --> Upload Class Initialized
+INFO - 2021-09-10 07:13:39 --> MY_Model class loaded
+INFO - 2021-09-10 07:13:39 --> Model "Application_model" initialized
+INFO - 2021-09-10 07:13:39 --> Controller Class Initialized
+INFO - 2021-09-10 10:58:44 --> Model "Home_model" initialized
+INFO - 2021-09-10 07:13:50 --> Config Class Initialized
+INFO - 2021-09-10 07:13:50 --> Hooks Class Initialized
+DEBUG - 2021-09-10 07:13:50 --> UTF-8 Support Enabled
+INFO - 2021-09-10 07:13:50 --> Utf8 Class Initialized
+INFO - 2021-09-10 07:13:50 --> URI Class Initialized
+INFO - 2021-09-10 07:13:50 --> Router Class Initialized
+INFO - 2021-09-10 07:13:50 --> Output Class Initialized
+INFO - 2021-09-10 07:13:50 --> Security Class Initialized
+DEBUG - 2021-09-10 07:13:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-09-10 07:13:50 --> CSRF cookie sent
+INFO - 2021-09-10 07:13:50 --> Input Class Initialized
+INFO - 2021-09-10 07:13:50 --> Language Class Initialized
+INFO - 2021-09-10 07:13:50 --> Loader Class Initialized
+INFO - 2021-09-10 07:13:50 --> Helper loaded: url_helper
+INFO - 2021-09-10 07:13:50 --> Helper loaded: file_helper
+INFO - 2021-09-10 07:13:50 --> Helper loaded: form_helper
+INFO - 2021-09-10 07:13:50 --> Helper loaded: security_helper
+INFO - 2021-09-10 07:13:50 --> Helper loaded: directory_helper
+INFO - 2021-09-10 07:13:50 --> Helper loaded: general_helper
+INFO - 2021-09-10 07:13:50 --> Database Driver Class Initialized
+INFO - 2021-09-10 07:13:50 --> Session: Class initialized using 'database' driver.
+INFO - 2021-09-10 07:13:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-09-10 07:13:50 --> Pagination Class Initialized
+INFO - 2021-09-10 07:13:50 --> XML-RPC Class Initialized
+INFO - 2021-09-10 07:13:50 --> Form Validation Class Initialized
+INFO - 2021-09-10 07:13:50 --> Upload Class Initialized
+INFO - 2021-09-10 07:13:50 --> MY_Model class loaded
+INFO - 2021-09-10 07:13:50 --> Model "Application_model" initialized
+INFO - 2021-09-10 07:13:50 --> Controller Class Initialized
+INFO - 2021-09-10 10:58:50 --> Model "Authentication_model" initialized
+INFO - 2021-09-10 10:58:55 --> File loaded: C:\Users\Gopal Ghimire\Desktop\New folder\school_anish\application\views\authentication/login.php
+INFO - 2021-09-10 10:58:55 --> Final output sent to browser
+DEBUG - 2021-09-10 10:58:55 --> Total execution time: 5.1552
+INFO - 2021-09-10 09:51:59 --> Config Class Initialized
+INFO - 2021-09-10 09:51:59 --> Hooks Class Initialized
+DEBUG - 2021-09-10 09:51:59 --> UTF-8 Support Enabled
+INFO - 2021-09-10 09:51:59 --> Utf8 Class Initialized
+INFO - 2021-09-10 09:52:00 --> URI Class Initialized
+INFO - 2021-09-10 09:52:00 --> Router Class Initialized
+INFO - 2021-09-10 09:52:01 --> Output Class Initialized
+INFO - 2021-09-10 09:52:01 --> Security Class Initialized
+DEBUG - 2021-09-10 09:52:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-09-10 09:52:01 --> CSRF cookie sent
+INFO - 2021-09-10 09:52:01 --> Input Class Initialized
+INFO - 2021-09-10 09:52:01 --> Language Class Initialized
+INFO - 2021-09-10 09:52:02 --> Loader Class Initialized
+INFO - 2021-09-10 09:52:02 --> Helper loaded: url_helper
+INFO - 2021-09-10 09:52:02 --> Helper loaded: file_helper
+INFO - 2021-09-10 09:52:02 --> Helper loaded: form_helper
+INFO - 2021-09-10 09:52:02 --> Helper loaded: security_helper
+INFO - 2021-09-10 09:52:02 --> Helper loaded: directory_helper
+INFO - 2021-09-10 09:52:02 --> Helper loaded: general_helper
+INFO - 2021-09-10 09:52:03 --> Database Driver Class Initialized
+INFO - 2021-09-10 09:52:05 --> Session: Class initialized using 'database' driver.
+INFO - 2021-09-10 09:52:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-09-10 09:52:05 --> Pagination Class Initialized
+INFO - 2021-09-10 09:52:05 --> XML-RPC Class Initialized
+INFO - 2021-09-10 09:52:05 --> Form Validation Class Initialized
+INFO - 2021-09-10 09:52:06 --> Upload Class Initialized
+INFO - 2021-09-10 09:52:06 --> MY_Model class loaded
+INFO - 2021-09-10 09:52:06 --> Model "Application_model" initialized
+INFO - 2021-09-10 09:52:06 --> Controller Class Initialized
+INFO - 2021-09-10 13:37:06 --> Model "Authentication_model" initialized
+INFO - 2021-09-10 13:37:07 --> File loaded: C:\Users\Gopal Ghimire\Desktop\New folder\school_anish\application\views\authentication/login.php
+INFO - 2021-09-10 13:37:07 --> Final output sent to browser
+DEBUG - 2021-09-10 13:37:07 --> Total execution time: 9.3457
