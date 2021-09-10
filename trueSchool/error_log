@@ -1,0 +1,11 @@
+[19-Jun-2021 19:27:58 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home2/truehost/public_html/application/controllers/Exam.php on line 9
+[28-Jun-2021 17:37:41 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 847
+[28-Jun-2021 17:39:43 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 847
+[28-Jun-2021 17:40:25 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 847
+[28-Jun-2021 17:41:32 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:51:55 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:52:18 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:52:21 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:52:31 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:53:00 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 848
+[28-Jun-2021 17:54:51 UTC] PHP Fatal error:  Cannot redeclare Accounting::delete_stock() in /home2/truehost/public_html/application/controllers/Accounting.php on line 847
