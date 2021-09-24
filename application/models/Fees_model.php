@@ -181,6 +181,7 @@ class Fees_model extends MY_Model
     public function getInvoiceList($class_id, $section_id, $branch_id)
     {
         $session=get_session_id();
+        // return $session;
         $this->db->select('e.student_id,e.roll,s.first_name,s.last_name,s.register_no,s.mobileno,c.name as class_name,se.name as section_name');
         $this->db->from('fee_allocation as fa');
         $this->db->join('enroll as e', 'e.student_id = fa.student_id', 'inner');
@@ -188,7 +189,9 @@ class Fees_model extends MY_Model
         $this->db->join('class as c', 'c.id = e.class_id', 'left');
         $this->db->join('section as se', 'se.id = e.section_id', 'left');
         $this->db->where('fa.branch_id', $branch_id);
+
         $this->db->where('fa.session_id', $session);
+
         $this->db->where('e.class_id', $class_id);
         if ($section_id != 'all') {
             $this->db->where('e.section_id', $section_id);
@@ -200,15 +203,18 @@ class Fees_model extends MY_Model
             $result[$key]['feegroup'] = $this->getfeeGroup($value['student_id']);
         }
         return $result;
+
+        // return $session;
     }
 
     public function getDueInvoiceList($class_id, $section_id, $feegroup_id, $fee_feetype_id)
     {
+        $session=get_session_id();
         $sql = "SELECT IFNULL(SUM(h.amount), '0') as total_amount, IFNULL(SUM(h.discount), '0') as total_discount, gd.amount as full_amount, gd.due_date, e.student_id, e.roll, s.first_name, s.last_name,
         s.register_no, s.mobileno, c.name as class_name, se.name as section_name FROM fee_allocation as fa LEFT JOIN fee_payment_history as h ON h.allocation_id = fa.id and h.type_id = " .
         $this->db->escape($fee_feetype_id) . " INNER JOIN fee_groups_details as gd ON gd.fee_groups_id = fa.group_id and gd.fee_type_id = " . $this->db->escape($fee_feetype_id) . " INNER JOIN
         enroll as e ON e.student_id = fa.student_id LEFT JOIN student as s ON s.id = e.student_id LEFT JOIN class as c ON c.id = e.class_id LEFT JOIN section as se ON se.id = e.section_id WHERE
-        fa.group_id = " . $this->db->escape($feegroup_id) . " AND fa.session_id = " . $this->db->escape(get_session_id()) . " AND e.class_id = " . $this->db->escape($class_id);
+        fa.group_id = " . $this->db->escape($feegroup_id) . " AND fa.session_id = " . $this->db->escape($session) . " AND e.class_id = " . $this->db->escape($class_id);
         
         if ($section_id != 'all') {
             $sql .= " AND e.section_id = " . $this->db->escape($section_id);
@@ -292,6 +298,7 @@ class Fees_model extends MY_Model
 
     public function getStuPaymentReport($classID='', $sectionID, $studentID, $typeID, $start, $end, $branchID)
     {
+        $session= get_session_id();
         $this->db->select('h.*,gd.due_date,ft.name as type_name,e.student_id,e.roll,s.first_name,s.last_name,s.register_no,pt.name as pay_via');
         $this->db->from('fee_payment_history as h');
         $this->db->join('fee_allocation as fa', 'fa.id = h.allocation_id', 'inner');
@@ -300,7 +307,7 @@ class Fees_model extends MY_Model
         $this->db->join('enroll as e', 'e.student_id = fa.student_id', 'inner');
         $this->db->join('student as s', 's.id = e.student_id', 'left');
         $this->db->join('payment_types as pt', 'pt.id = h.pay_via', 'left');
-        $this->db->where('fa.session_id', get_session_id());
+        $this->db->where('fa.session_id', $session);
         $this->db->where('h.date  >=', $start);
         $this->db->where('h.date <=', $end);
         $this->db->where('e.branch_id', $branchID);
@@ -320,11 +327,12 @@ class Fees_model extends MY_Model
 
     function getfeeGroup($studentID)
     {
+        $session= get_session_id();
         $this->db->select('g.name');
         $this->db->from('fee_allocation as fa');
         $this->db->join('fee_groups as g', 'g.id = fa.group_id', 'inner');
         $this->db->where('fa.student_id', $studentID);
-        $this->db->where('fa.session_id', get_session_id());
+        $this->db->where('fa.session_id',$session);
         return $this->db->get()->result_array();
     }
 

@@ -88,10 +88,11 @@ function get_global_setting($name = '')
     // $CI->db->where('id', 1);
     // $CI->db->select($name);
     $query = $CI->db->get('global_settings');
-    return $CI->db->last_query();;
+    // return $CI->db->last_query();
     if ($query->num_rows() > 0) {
         $row = $query->row();
         return $row->$name;
+        // return $row->$name;
     }else{
         return 3;
     }

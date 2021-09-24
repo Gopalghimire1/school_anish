@@ -2,6 +2,7 @@
 require APPPATH . 'libraries/REST_Controller.php';
 
 class Api extends REST_Controller{
+    // class Api extends CI_Controller{
     public $in;
     public $hasAuth;
     public $auth;

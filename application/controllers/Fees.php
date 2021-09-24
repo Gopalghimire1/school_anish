@@ -496,6 +496,7 @@ class Fees extends Admin_Controller
         if (!is_superadmin_loggedin()) {
             $this->db->where('branch_id', get_loggedin_branch_id());
         }
+        
         $this->db->where('student_id', $student_id);
         $result = $this->db->get('fee_allocation')->result_array();
         foreach ($result as $key => $value) {

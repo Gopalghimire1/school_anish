@@ -21,4 +21,12 @@ class Parents extends Api {
         $list = ['parent'=>$parent];
         $this->response($list,200);
     }
+
+    public function detail_post()
+    {
+        $this->db->from('parent');
+        $this->db->where('id',$this->in->parent_id);
+        $data = $this->db->get()->result_array();
+        $this->response($data,200);
+    }
 }
