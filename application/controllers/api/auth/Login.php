@@ -14,6 +14,7 @@ class Login extends Api {
     public function index_post(){
         $email = $this->input->post('email');
                 $password = $this->input->post('password');
+                $this->response([$email,$password],200);
                 // username is okey lets check the password now
                 $login_credential = $this->authentication_model->login_credential($email, $password);
                 if ($login_credential) {
